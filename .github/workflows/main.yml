@@ -8,4 +8,9 @@ jobs:
     steps:
       - name: Print Hello
         run: echo Hello GH Actions
+      - name: Print few lines
+        run: |
+          echo Barev ahper
+          echo Second line
+          echo Therd line
       
