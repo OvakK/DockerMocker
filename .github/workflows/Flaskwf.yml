@@ -7,5 +7,5 @@ jobs:
     - name: Step1
       run: |
           python -v
-          flask -v
+          flask --version
       
