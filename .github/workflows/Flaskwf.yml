@@ -8,4 +8,8 @@ jobs:
       run: |
           python -v
           pip3 install flask
+    - name: Step2
+      uses: actions/checkout@v3
+    - name: Step3
+      run: python hello.py
       
