@@ -1,0 +1,8 @@
+name: MyFlask
+on: push
+jobs:
+  Job1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Step1
+      run: python --v
