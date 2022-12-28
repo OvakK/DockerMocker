@@ -8,5 +8,13 @@ jobs:
       run: docker -v
     - name: Copy
       uses: actions/checkout@v3
-    - name: Build Image
-      run: docker build -t kok .
+    - name: Log in dockerhub
+      uses: docker/login-action@v2
+      with:
+        username: Ovak
+        password: 21021991ovak!
+    - name: Build and push Docker image
+      uses: docker/build-push-action@v3.2.0
+      with:
+        push: true
+        tags: kok/MyDickerFlusk
