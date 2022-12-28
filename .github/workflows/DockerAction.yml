@@ -17,4 +17,4 @@ jobs:
       uses: docker/build-push-action@v3.2.0
       with:
         push: true
-        tags: kok/MyDickerFlusk
+        tags: kok/MyDockerFlusk:1
