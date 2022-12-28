@@ -4,8 +4,8 @@ on: workflow_dispatch
 
 jobs:
   BuildContainer:
-    runs-on: ubuntu-latest
-    steps:
+      runs-on: ubuntu-latest
+      steps:
       - name: Print Hello
         run: echo Hello GH Actions
       - name: Print few lines
