@@ -5,4 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Step1
-      run: python --v
+      run: |
+          python -v
+          flask -v
+      
