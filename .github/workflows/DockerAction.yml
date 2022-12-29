@@ -1,5 +1,5 @@
 name: MyDockerAction
-on: push
+on: workflow_dispatch
 jobs:
   Job1:
     runs-on: ubuntu-latest
