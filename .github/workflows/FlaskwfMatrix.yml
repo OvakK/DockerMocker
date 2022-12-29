@@ -6,7 +6,7 @@ jobs:
       matrix:
         python-versions: [3.7, 3.8] 
         os-versions: [ubuntu-latest, windows-latest]
-    runs-on: ${{ matrix.os-version }}
+    runs-on: ${{ matrix.os-versions }}
     steps:
     - name: Setup Python
       uses: actions/setup-python@v4.4.0
