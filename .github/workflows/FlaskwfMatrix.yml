@@ -1,0 +1,34 @@
+name: MyFlaskMatrix
+on: push
+jobs:
+  Job1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Step1
+      run: |
+          python -v
+          pip3 install flask
+    - name: Step2
+      uses: actions/checkout@v3
+    - name: Step3
+      run: python hello.py
+  MatrixTest:
+    strategy:
+      matrix:
+        python-versions: [3.7, 3.8] 
+        os-versions: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os-version }}
+    steps:
+    - name: Setup Python
+      uses: actions/setup-python@v4.4.0
+      with:
+        python-versions: ${{ matrix.python-versions }}
+    - name: Step1
+      run: |
+          python -v
+          pip3 install flask
+    - name: Step2
+      uses: actions/checkout@v3
+    - name: Step3
+      run: python hello.py Flask2.py
+      
