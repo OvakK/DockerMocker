@@ -1,4 +1,4 @@
-# Docker file to build Docker image of Flask app. 12343
+# Docker file to build Docker image of Flask app.
 
 
 FROM ubuntu
