@@ -11,7 +11,7 @@ env:
 
 jobs:
   get-release-tag:
-    if: github.event.pull_request.base.ref == 'main' && github.event.pull_request.merged == true
+    if: github.event.pull_request.base.ref == 'master' && github.event.pull_request.merged == true
     
     runs-on:
       - ubuntu-latest
