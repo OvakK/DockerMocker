@@ -2,6 +2,9 @@ name: OficialDockerWorkflow
 
 on:
   workflow_dispatch:
+
+env:
+  TAG: $GITHUB_REF_NAME
   
 jobs:
   build:
@@ -26,4 +29,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/flask_app:version${{ env.GITHUB_REF_NAME }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/flask_app:version${{ env.TAG }}
