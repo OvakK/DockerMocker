@@ -20,6 +20,9 @@ jobs:
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
       -
+        name: debug
+        run: echo ${{ env.GITHUB_RUN_NUMBER }}
+      -
         name: Build and push
         uses: docker/build-push-action@v4
         with:
