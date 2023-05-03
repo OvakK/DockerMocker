@@ -3,7 +3,7 @@ name: OficialDockerWorkflow
 on:
   workflow_dispatch:
 env:
-  TAG: $GITHUB_RUN_NUMBER
+  TAG: ${GITHUB_RUN_NUMBER}
   
 jobs:
   build:
